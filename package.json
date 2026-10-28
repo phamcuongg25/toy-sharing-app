@@ -1,0 +1,41 @@
+{
+  "name": "toy-sharing-app",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Ứng dụng quản lý & chia sẻ đồ chơi trẻ em (React + json-server)",
+  "dependencies": {
+    "axios": "^1.6.7",
+    "bootstrap": "^5.3.8",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.30.4",
+    "react-scripts": "5.0.1"
+  },
+  "devDependencies": {
+    "json-server": "^0.17.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "server": "json-server --watch db.json --port 9999"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

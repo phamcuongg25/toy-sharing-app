@@ -1,0 +1,178 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "user1",
+      "password": "123456",
+      "name": "Nguyễn Văn A"
+    },
+    {
+      "id": 2,
+      "username": "user2",
+      "password": "123456",
+      "name": "Trần Thị B"
+    },
+    {
+      "id": 3,
+      "username": "user3",
+      "password": "123456",
+      "name": "Lê Thị C"
+    }
+  ],
+  "toys": [
+    {
+      "id": 1,
+      "name": "Xe tải đồ chơi",
+      "description": "Xe tải nhựa màu đỏ, còn mới 90%, chạy được bằng cách đẩy tay.",
+      "image": "/images/xetai.jpg",
+      "category": "Xe cộ",
+      "ageGroup": "3-5 tuổi",
+      "ownerId": 1,
+      "ownerName": "Nguyễn Văn A",
+      "status": "available"
+    },
+    {
+      "id": 2,
+      "name": "Gấu bông Teddy",
+      "description": "Gấu bông mềm mại, kích thước lớn, giặt sạch trước khi cho mượn.",
+      "image": "/images/teddy.jpg",
+      "category": "Thú nhồi bông",
+      "ageGroup": "3-5 tuổi",
+      "ownerId": 2,
+      "ownerName": "Trần Thị B",
+      "status": "available"
+    },
+    {
+      "id": 3,
+      "name": "Bộ Lego xây dựng",
+      "description": "Bộ lego 200 mảnh ghép, đầy đủ hướng dẫn lắp ráp.",
+      "image": "/images/lego.jpg",
+      "category": "Xếp hình",
+      "ageGroup": "6-8 tuổi",
+      "ownerId": 1,
+      "ownerName": "Nguyễn Văn A",
+      "status": "available"
+    },
+    {
+      "id": 4,
+      "name": "Bộ đồ chơi bác sĩ",
+      "description": "Bộ dụng cụ bác sĩ bằng nhựa an toàn.",
+      "image": "/images/bacsi.jpg",
+      "category": "Nhập vai",
+      "ageGroup": "3-5 tuổi",
+      "ownerId": 3,
+      "ownerName": "Lê Thị C",
+      "status": "borrowed"
+    }
+  ],
+  "borrows": [
+    {
+      "id": 1,
+      "toyId": 4,
+      "toyName": "Bộ đồ chơi bác sĩ",
+      "toyImage": "/images/bacsi.jpg",
+      "ownerId": 3,
+      "ownerName": "Lê Thị C",
+      "borrowerId": 1,
+      "borrowerName": "Nguyễn Văn A",
+      "status": "returned",
+      "requestDate": "2026-07-22T07:04:00.563Z",
+      "borrowDate": "2026-07-22",
+      "dueDate": "2026-07-23",
+      "returnDate": "2026-07-22T07:06:50.054Z"
+    },
+    {
+      "id": 2,
+      "toyId": 4,
+      "toyName": "Bộ đồ chơi bác sĩ",
+      "toyImage": "/images/bacsi.jpg",
+      "ownerId": 3,
+      "ownerName": "Lê Thị C",
+      "borrowerId": 2,
+      "borrowerName": "Trần Thị B",
+      "status": "returned",
+      "requestDate": "2026-07-24T03:59:26.146Z",
+      "borrowDate": "2026-07-24",
+      "dueDate": "2026-07-31",
+      "returnDate": "2026-07-24T04:01:05.745Z"
+    },
+    {
+      "id": 3,
+      "toyId": 3,
+      "toyName": "Bộ Lego xây dựng",
+      "toyImage": "/images/lego.jpg",
+      "ownerId": 1,
+      "ownerName": "Nguyễn Văn A",
+      "borrowerId": 3,
+      "borrowerName": "Lê Thị C",
+      "status": "rejected",
+      "requestDate": "2026-07-24T06:31:50.181Z"
+    },
+    {
+      "id": 4,
+      "toyId": 2,
+      "toyName": "Gấu bông Teddy",
+      "toyImage": "/images/teddy.jpg",
+      "ownerId": 2,
+      "ownerName": "Trần Thị B",
+      "borrowerId": 1,
+      "borrowerName": "Nguyễn Văn A",
+      "status": "returned",
+      "requestDate": "2026-07-24T08:45:26.968Z",
+      "borrowDate": "2026-07-24",
+      "dueDate": "2026-07-31",
+      "returnDate": "2026-07-24T08:45:51.813Z"
+    },
+    {
+      "id": 5,
+      "toyId": 4,
+      "toyName": "Bộ đồ chơi bác sĩ",
+      "toyImage": "/images/bacsi.jpg",
+      "ownerId": 3,
+      "ownerName": "Lê Thị C",
+      "borrowerId": 1,
+      "borrowerName": "Nguyễn Văn A",
+      "status": "extend_pending",
+      "requestDate": "2026-07-24T08:59:14.103Z"
+    },
+    {
+      "id": 6,
+      "toyId": 2,
+      "toyName": "Gấu bông Teddy",
+      "toyImage": "/images/teddy.jpg",
+      "ownerId": 2,
+      "ownerName": "Trần Thị B",
+      "borrowerId": 1,
+      "borrowerName": "Nguyễn Văn A",
+      "status": "returned",
+      "requestDate": "2026-07-24T08:59:17.690Z",
+      "borrowDate": "2026-07-24",
+      "dueDate": "2026-07-31",
+      "returnDate": "2026-07-24T09:45:30.709Z"
+    },
+    {
+      "id": 7,
+      "toyId": 3,
+      "toyName": "Bộ Lego xây dựng",
+      "toyImage": "/images/lego.jpg",
+      "ownerId": 1,
+      "ownerName": "Nguyễn Văn A",
+      "borrowerId": 2,
+      "borrowerName": "Trần Thị B",
+      "status": "rejected",
+      "requestDate": "2026-07-24T09:03:00.311Z"
+    },
+    {
+      "toyId": 3,
+      "toyName": "Bộ Lego xây dựng",
+      "toyImage": "/images/lego.jpg",
+      "ownerId": 1,
+      "ownerName": "Nguyễn Văn A",
+      "borrowerId": 2,
+      "borrowerName": "Trần Thị B",
+      "status": "rejected",
+      "requestDate": "2026-07-24T09:17:55.407Z",
+      "id": 8
+    }
+  ]
+}
